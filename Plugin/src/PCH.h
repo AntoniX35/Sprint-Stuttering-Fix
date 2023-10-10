@@ -128,15 +128,20 @@ DLLEXPORT constinit auto SFSEPlugin_Version = []() noexcept {
 	data.AuthorName(Plugin::AUTHOR);
 
 	// REL::ID usage instead of REL::Offset
-	//data.UsesAddressLibrary(true);
+	data.UsesAddressLibrary(true);
 	// Version independent signature scanning
 	//data.UsesSigScanning(true);
 
 	// Uses version specific structure definitions
-	//data.IsLayoutDependent(true);
-	//data.HasNoStructUse(true);
+	data.IsLayoutDependent(true);
+	data.HasNoStructUse(true);
 
-	data.CompatibleVersions({ SFSE::RUNTIME_LATEST });
+    data.CompatibleVersions({
+        SFSE::RUNTIME_SF_1_6_35,
+        SFSE::RUNTIME_SF_1_7_23,
+        SFSE::RUNTIME_SF_1_7_29,
+        SFSE::RUNTIME_LATEST
+    });
 
 	return data;
 }();

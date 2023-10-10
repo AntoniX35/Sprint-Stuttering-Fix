@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 3.21)
 
 # info
 project(
-	Sprint-Stuttering-Fix
-	VERSION 1.0.0
+	SprintStutteringFix
+	VERSION 1.0.3
 	LANGUAGES CXX
 )
 
