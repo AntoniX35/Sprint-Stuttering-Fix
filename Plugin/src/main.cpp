@@ -9,7 +9,7 @@ namespace SprintStutteringFix
 {
 	void Install()
 	{
-		REL::Relocation<float> SprintLimit{ REL::ID(498736) };
+		REL::Relocation<std::uintptr_t> SprintLimit{ REL::ID(498736) };
 		
 		float limit = 2000.0f;
 
