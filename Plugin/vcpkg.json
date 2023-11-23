@@ -1,8 +1,8 @@
 {
     "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
     "name": "sprint-stuttering-fix",
-    "version-string": "1.0.0",
-    "description": "sfse plugin for starfield",
+    "version-string": "1.0.5",
+    "description": "Fxed twitching/stuttering when sprinting in first person.",
     "homepage": "https://github.com/AntoniX35/Sprint-Stuttering-Fix",
     "dependencies": [
         "spdlog",
@@ -10,5 +10,7 @@
         "simpleini",
         "tomlplusplus",
         "xbyak"
-    ]
+    ],
+    "builtin-baseline": "a7d99a5c3cd1456af023051d025a5643a2d6e79c"
 }
+

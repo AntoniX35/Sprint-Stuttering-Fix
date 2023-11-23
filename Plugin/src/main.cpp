@@ -1,8 +1,3 @@
-/* 
- * https://github.com/Starfield-Reverse-Engineering/CommonLibSF
- * This plugin template links against CommonLibSF
- */
-
 #include "DKUtil/Hook.hpp"
 
 namespace SprintStutteringFix
@@ -49,11 +44,11 @@ DLLEXPORT bool SFSEAPI SFSEPlugin_Load(const SFSE::LoadInterface* a_sfse)
 	SFSE::Init(a_sfse, false);
 	DKUtil::Logger::Init(Plugin::NAME, std::to_string(Plugin::Version));
 	INFO("{} v{} loaded", Plugin::NAME, Plugin::Version);
-	
+
 	// do stuff
 	// this allocates 1024 bytes for development builds, you can
 	// adjust the value accordingly with the log result for release builds
-	//SFSE::AllocTrampoline(1 << 7);
+	//SFSE::AllocTrampoline(1 << 10);
 
 	SFSE::GetMessagingInterface()->RegisterListener(MessageCallback);
 
